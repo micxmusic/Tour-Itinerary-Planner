@@ -1,12 +1,15 @@
+"""
+function takes in a place name and finds k number of locations closest
+to that place from the list of locations
+"""
 def kclosest(place, k, locations):
     
     sorted_locations =[]
     output = []
     
-    """
-    calculates distance of each location and adds to new list a tuple 
-    containing location name and corresponding distance
-    """
+    #calculates distance of each location and adds to new list a tuple 
+    #containing location name and corresponding distance
+    
     for i in range(len(locations)):
         distance = (((place[0]-locations[i][1])**2+
                     (place[1]-locations[i][2])**2)**0.5)
