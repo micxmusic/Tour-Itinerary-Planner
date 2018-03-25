@@ -1,3 +1,7 @@
+"""
+The function takes in a tour with multiple locations and a list of locations with coordinates to output the toal length of the tour.
+"""
+
 def tourlength(tour, locations):
     
     total_distance = 0.0
@@ -10,10 +14,10 @@ def tourlength(tour, locations):
         for j in range(len(tour)-1):
             #setting up value for place and place 2
             for i in range(len(locations)):
-                if tour[j]==locations[i][0]:
-                    place=tuple([locations[i][1],locations[i][2]])
-                if tour[j+1]==locations[i][0]:
-                    place2=tuple([locations[i][1],locations[i][2]])
+                if tour[j] == locations[i][0]:
+                    place = tuple([locations[i][1],locations[i][2]])
+                if tour[j+1] == locations[i][0]:
+                    place2 = tuple([locations[i][1],locations[i][2]])
             #calculate distance between two locations and adds to total
             distance = (((place2[0]-place[0])**2+
                         (place2[1]-place[1])**2)**0.5)
