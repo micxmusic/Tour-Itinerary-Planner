@@ -1,5 +1,6 @@
 """
-The function takes in a tour with multiple locations and a list of locations with coordinates to output the toal length of the tour.
+The function takes in a tour with multiple locations and a list of 
+locations with coordinates to output the toal length of the tour.
 """
 
 def tourlength(tour, locations):
